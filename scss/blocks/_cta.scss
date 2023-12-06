@@ -1,0 +1,52 @@
+.cta {
+	padding: 180px;
+	background: linear-gradient(
+			180deg,
+			#242b33 10.42%,
+			rgba(36, 43, 51, 0) 50.52%,
+			#242b33 90.1%
+		),
+		linear-gradient(0deg, rgba(36, 43, 51, 0.9) 0%, rgba(36, 43, 51, 0.9) 100%),
+		url(./../../IMG/main/сta/city.jpg), #c4c4c4;
+
+	@include mediaTablet {
+		padding: 60px 0;
+	}
+}
+
+.cta__title {
+	margin-bottom: 17px;
+
+	@include mediaTablet {
+		font-size: 14px;
+		margin-bottom: 44px
+	}
+}
+
+.cta__inline {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px;
+
+	@include mediaTablet {
+		grid-template-columns: 1fr;
+		
+	}
+}
+.cta__text {
+	color: $white;
+	line-height: 1.5;
+	p + p {
+		margin-top: 1em;
+	}
+}
+.cta__form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 35px 30px;
+
+   @include mediaTablet {
+		grid-template-columns: 1fr;
+		gap: 10px;
+	}
+}

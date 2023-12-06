@@ -1,0 +1,48 @@
+.form__input {
+   height: 50px;
+   padding: 12px;
+   text-align: center;
+   background-color: rgba(255, 255, 255, 0.2);
+   color: $white;
+   font-style: 14px;
+   transition: background-color 0.2s ease-in;
+
+   &::placeholder {
+      color: #bebebe;
+   }
+
+   &:focus {
+      background-color: rgba(255, 255, 255, 0.3);
+   }
+}
+
+.form__provacy {
+   font-size: 13px;
+   font-weight: 400;
+   color: $white;
+   text-align: center;
+   line-height: 1.23;
+   padding: 11px 0;
+
+   &--bottom {
+      @include mediaTablet {
+         grid-row: 4 / 5;
+      }
+   }
+}
+
+.form__btn {
+   height: 50px;
+   padding: 12px;
+   font-size: 16px;
+   background: $accent;
+   font-weight: 700px;
+   text-align: center;
+   transition: filter 0.2s ease-in;
+
+   &:hover {
+      background-color: $accent;
+      filter: contrast(150%);
+      border: 1px solid #bebebe;
+   }
+}
